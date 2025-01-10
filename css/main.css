@@ -9,6 +9,7 @@ body {
     color: #fff; /* Белый текст */
     font-size: 16px;
 
+    max-width: auto;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Убирает горизонтальную прокрутку */
