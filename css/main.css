@@ -1,10 +1,12 @@
-@import url(https://fonts.cdnfonts.com/css/gagali);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,700;1,700&display=swap');
 
 body {
-    font-family: 'Gagalin', sans-serif; /* Используем шрифт Gagalin */
+    font-family: "Schibsted Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: #272727; /* Тёмный фон */
     color: #fff; /* Белый текст */
-    margin-top: 120px; /* Отступ, чтобы контент не перекрывался шапкой */
     font-size: 16px;
 
     margin: 0;
@@ -32,7 +34,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 4vw;
+    padding: 0.5vw 4vw;
+}
+
+.container img {
+    height: 72px;
 }
 
 .button {
@@ -110,10 +116,11 @@ section {
     background-color: #0f0f0f;
     display: flex;
     justify-content: center;
+    white-space: nowrap; /* Запрещаем перенос текста */
 }
 
 h3 {
-    font-size: 56px;
+    font-size: 50px;
     margin: 20px;
 }
 
@@ -175,5 +182,120 @@ h5 {
 
 .block p {
     font-size: 24px;
+    margin: 20px;
+}
+
+
+/* моб версия */
+@media screen and (max-width: 768px)
+    {
+    .container img {
+        height: 52px;
+    }
+
+    .button {
+        padding: 5px 20px; /* Внутренние отступы */
+        border-radius: 25px; /* Скругление углов */
+        font-size: 24px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .logo img {
+        width: 30vw;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 2% 15%;
+    }
+
+    .soc {
+        gap: 30px;
+    }
+
+    img {
+        padding: 12px 48px;
+        height: 24px;
+        width: auto;
+    }
+
+    /* повтор лин */
+section {
+    width: 100%;
+    color: #272727;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+article .text {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+    text-align: center;
+    justify-content: center;
+
+    }
+
+    h4 {
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .text p {
+        font-size: 16px;
+    }
+
+/* инструкция */
+
+.instruction {
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+}
+
+.buy {
+    flex-direction: column; /* Выстраиваем элементы в столбик */
+    align-items: center; /* Центрируем блоки по горизонтали */
+}
+
+.block {
+    width: 90%; /* Задаём ширину для адаптации */
+}
+
+h5 {
+    font-size: 26px;
+    margin: 5px;
+    margin-bottom: 5px;
+
+}
+
+.block p {
+    font-size: 20px;
     margin: 20px;
 }
