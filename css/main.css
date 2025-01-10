@@ -1,0 +1,179 @@
+@import url(https://fonts.cdnfonts.com/css/gagali);
+
+body {
+    font-family: 'Gagalin', sans-serif; /* Используем шрифт Gagalin */
+    background-color: #272727; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+    margin-top: 120px; /* Отступ, чтобы контент не перекрывался шапкой */
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убирает горизонтальную прокрутку */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Шапка */
+header {
+    background-color: #0f0f0f;
+
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Прикрепить к верхнему краю */
+    left: 0; /* Прикрепить к левому краю */
+    width: 100%; /* Растянуть на всю ширину */
+    z-index: 1; /* Поверх других элементов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень (для красоты) */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4vw;
+}
+
+.button {
+    background-color: #32A9DF; /* Голубая кнопка */
+    color: #fff; /* Белый текст */
+    text-decoration: none; /* Убираем подчёркивание */
+    padding: 10px 40px; /* Внутренние отступы */
+    border-radius: 50px; /* Скругление углов */
+    font-size: 36px;
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-decoration: none; /* Убираем стандартное подчёркивание */
+}
+
+
+
+/* Глав страница */
+
+main {
+    margin-top: 120px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.logo img {
+    width: 20vw;
+    max-width: 250px;
+    height: auto;
+}
+
+.logo h2 {
+    font-size: 36px;
+    margin-top: -5px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+/* соц сети */
+
+main .soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc {
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+img {
+    padding: 12px 60px;
+    height: 50px;
+    width: auto;
+}
+
+.x {
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.tg {
+    background-color: #32A9DF;
+    border-radius: 16px;
+}
+
+
+/* повтор лин */
+section {
+    width: 100%;
+    color: #272727;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 56px;
+    margin: 20px;
+}
+
+/* описание */
+article .text {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 24px;
+}
+
+/* инструкция */
+
+.instruction {
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    margin-bottom: 30px;
+}
+
+.block {
+    background-color: #0f0f0f;
+    width: 33%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+h5 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.block p {
+    font-size: 24px;
+    margin: 20px;
+}
