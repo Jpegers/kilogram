@@ -13,8 +13,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Убирает горизонтальную прокрутку */
-    
-    max-width: 100%; /* Убедитесь, что текст не превышает границы экрана */
 }
 
 a {
@@ -38,9 +36,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5vw 4vw;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%; /* Убедитесь, что текст не превышает границы экрана */
 }
 
 .container img {
@@ -122,8 +117,8 @@ section {
     background-color: #0f0f0f;
     display: flex;
     justify-content: center;
-    white-space: normal; /* Позволяем перенос текста */
-
+    white-space: nowrap; /* Запрещаем перенос текста */
+    max-width: 100%;
 }
 
 h3 {
@@ -133,9 +128,8 @@ h3 {
 
 /* описание */
 article .text {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%; /* Убедитесь, что текст не превышает границы экрана */
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 100px;
     margin-top: 50px;
     
@@ -145,9 +139,8 @@ article .text {
 
 h4 {
     font-size: 64px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    
+    margin: auto;
+    margin-bottom: 2vw;
     text-align: center;
     justify-content: center;
 }
@@ -170,7 +163,7 @@ h4 {
 .buy {
     display: flex;
     justify-content: space-between;
-    gap: 6vw;
+    gap: 2vw;
     margin-bottom: 30px;
 }
 
@@ -200,7 +193,7 @@ h5 {
 
 
 /* моб версия */
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1000px)
     {
     .container img {
         height: 52px;
@@ -253,7 +246,7 @@ section {
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0.5vw;
 }
 
@@ -261,7 +254,6 @@ article .text {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 30px;
-    margin-top: 50px;
     
     text-align: center;
     justify-content: center;
@@ -270,11 +262,9 @@ article .text {
 
     h4 {
         font-size: 36px;
-        margin-top: 20px;
-        margin-bottom: 50px;
-        
         text-align: center;
         justify-content: center;
+        margin-bottom: 2vw;
     }
     
     .text p {
