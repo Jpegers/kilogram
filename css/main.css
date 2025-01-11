@@ -127,8 +127,8 @@ h3 {
 
 /* описание */
 article .text {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 100px;
     margin-top: 50px;
     
@@ -146,7 +146,7 @@ h4 {
 }
 
 .text p {
-    font-size: 24px;
+    font-size: calc(16px, 4vw, 24vw);
 }
 
 /* инструкция */
@@ -155,15 +155,15 @@ h4 {
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 
 .buy {
     display: flex;
     justify-content: space-between;
-    gap:50px;
+    gap: 2vw;
     margin-bottom: 30px;
 }
 
@@ -187,8 +187,13 @@ h5 {
 }
 
 
+
+
+
+
+
 /* моб версия */
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1024px)
     {
     .container img {
         height: 52px;
@@ -241,8 +246,8 @@ section {
 }
 
 h3 {
-    font-size: 18px;
-    margin: 10px;
+    font-size: 14px;
+    margin: 0.5vw;
 }
 
 article .text {
@@ -274,10 +279,9 @@ article .text {
 .instruction {
     justify-content: center;
     margin-top: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 30px;
-}
 }
 
 .buy {
@@ -287,16 +291,18 @@ article .text {
 
 .block {
     width: 90%; /* Задаём ширину для адаптации */
+    padding: 2vw;
 }
 
 h5 {
-    font-size: 26px;
+    font-size: 20px;
     margin: 5px;
     margin-bottom: 5px;
 
 }
 
 .block p {
-    font-size: 20px;
+    font-size: 14px;
     margin: 20px;
+}
 }
