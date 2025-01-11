@@ -2,8 +2,8 @@
 
 body {
     font-family: "Schibsted Grotesk", serif;
+    font-weight: 400; /* Убедитесь, что здесь обычное начертание */
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
     background-color: #272727; /* Тёмный фон */
     color: #fff; /* Белый текст */
@@ -13,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Убирает горизонтальную прокрутку */
+    font-optical-sizing: unset;
+
 }
 
 a {
@@ -224,8 +226,8 @@ h5 {
     }
 
     h1 {
-        font-size: 7vw;
-        padding: 2% 15%;
+        font-size: 7.5vw;
+        padding: 2% 10%;
     }
 
     .soc {
@@ -304,6 +306,10 @@ h5 {
 
 .text p {
     font-size: 3.4vw;
+}
+
+.pin p {
+    font-size: 3.5vw;
 }
 
 }
