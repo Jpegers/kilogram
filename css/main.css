@@ -56,7 +56,6 @@ header {
 }
 
 
-
 /* Глав страница */
 
 main {
@@ -64,7 +63,6 @@ main {
     align-items: center;
     text-align: center;
 }
-
 
 .logo img {
     width: 20vw;
@@ -83,7 +81,6 @@ h1 {
 }
 
 /* соц сети */
-
 main .soc {
     display: flex;
     justify-content: center;
@@ -167,7 +164,6 @@ h4 {
     margin-right: 10vw;
 }
 
-
 .buy {
     display: flex;
     justify-content: space-between;
@@ -203,6 +199,7 @@ h5 {
 /* моб версия */
 @media screen and (max-width: 1000px)
     {
+
     .container img {
         height: 52px;
     }
@@ -212,7 +209,6 @@ h5 {
         border-radius: 25px; /* Скругление углов */
         font-size: 24px;
     }
-
 
     .logo img {
         width: 30vw;
