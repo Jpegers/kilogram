@@ -170,7 +170,7 @@ h4 {
 .buy {
     display: flex;
     justify-content: space-between;
-    gap: 2vw;
+    gap: 6vw;
     margin-bottom: 30px;
 }
 
