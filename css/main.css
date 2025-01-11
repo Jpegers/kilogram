@@ -36,6 +36,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5vw 4vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Убедитесь, что текст не превышает границы экрана */
 }
 
 .container img {
@@ -117,7 +120,8 @@ section {
     background-color: #0f0f0f;
     display: flex;
     justify-content: center;
-    white-space: nowrap; /* Запрещаем перенос текста */
+    white-space: normal; /* Позволяем перенос текста */
+
 }
 
 h3 {
@@ -127,8 +131,9 @@ h3 {
 
 /* описание */
 article .text {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Убедитесь, что текст не превышает границы экрана */
     margin-bottom: 100px;
     margin-top: 50px;
     
