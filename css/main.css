@@ -117,13 +117,19 @@ section {
     background-color: #0f0f0f;
     display: flex;
     justify-content: center;
+    text-align: center;
     white-space: nowrap; /* Запрещаем перенос текста */
     max-width: 100%;
 }
 
 h3 {
-    font-size: 50px;
-    margin: 20px;
+    font-size: 4vw;
+    width: 95vw; /* Установите фиксированную ширину контейнера */
+    margin: 1vw;
+    height: auto;
+    overflow: hidden; /* Скрыть лишний текст */
+    white-space: nowrap; /* Запретить перенос текста */
+    word-break: break-word; /* Перенос слов только целиком */
 }
 
 /* описание */
@@ -131,14 +137,14 @@ article .text {
     margin-left: 15vw;
     margin-right: 15vw;
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 5vw;
     
     text-align: center;
     justify-content: center;
 }
 
 h4 {
-    font-size: 64px;
+    font-size: 4vw;
     margin: auto;
     margin-bottom: 2vw;
     text-align: center;
@@ -146,14 +152,14 @@ h4 {
 }
 
 .text p {
-    font-size: calc(16px, 4vw, 24vw);
+    font-size: 2vw;
 }
 
 /* инструкция */
 
 .instruction {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5vw;
     margin-bottom: 100px;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -178,7 +184,7 @@ h4 {
 
 h5 {
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
 .block p {
@@ -205,9 +211,6 @@ h5 {
         font-size: 24px;
     }
 
-    main {
-        margin-top: 100px;
-    }
 
     .logo img {
         width: 30vw;
@@ -221,7 +224,7 @@ h5 {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 5vw;
         padding: 2% 15%;
     }
 
@@ -245,10 +248,6 @@ section {
     white-space: nowrap; /* Запрещаем перенос текста */
 }
 
-h3 {
-    font-size: 16px;
-    margin: 0.5vw;
-}
 
 article .text {
     margin-left: 50px;
@@ -261,21 +260,21 @@ article .text {
     }
 
     h4 {
-        font-size: 36px;
+        font-size: 6vw;
         text-align: center;
         justify-content: center;
         margin-bottom: 2vw;
     }
     
     .text p {
-        font-size: 16px;
+        font-size: 2.4vw;
     }
 
 /* инструкция */
 
 .instruction {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 3vw;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 30px;
@@ -299,7 +298,7 @@ h5 {
 }
 
 .block p {
-    font-size: 14px;
+    font-size: 2.5vw;
     margin: 20px;
 }
 }
